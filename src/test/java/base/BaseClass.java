@@ -58,6 +58,7 @@ public class BaseClass {
 	        String headless = System.getProperty("headless");
 
 	     // 🔥 ALWAYS apply base stability options
+	        options.addArguments("--headless=new");
 	        options.addArguments("--no-sandbox");
 	        options.addArguments("--disable-dev-shm-usage");
 	        options.addArguments("--window-size=1920,1080");
@@ -71,6 +72,7 @@ public class BaseClass {
 	        }
 
 	        driver = new ChromeDriver(options);
+	    	System.out.println("Launching Chrome with options: " + options);
 	    }
 	
         else if (browser.equalsIgnoreCase("edge")) {
@@ -83,6 +85,8 @@ public class BaseClass {
         
 		// driver.get("https://www.amazon.com/");  old
 		driver.manage().window().maximize();
+		
+
 	}
     
     public void takeScreenshot(String testName) {
