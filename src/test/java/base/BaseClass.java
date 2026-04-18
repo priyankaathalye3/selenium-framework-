@@ -41,6 +41,12 @@ public class BaseClass {
 	public void setup(String browser) {
 
 	    config = new ConfigReader();
+	    
+	    // ✅ Fallback (important for CI)
+	    if (browser == null || browser.isEmpty()) {
+	        browser = "chrome";
+	        System.out.println("No browser provided, defaulting to CHROME");
+	    }
 
 	    if (browser.equalsIgnoreCase("chrome")) {
 
@@ -51,23 +57,21 @@ public class BaseClass {
 	        // 👇 Check if headless flag is passed
 	        String headless = System.getProperty("headless");
 
-	        if (headless != null && headless.equalsIgnoreCase("true")) {
+	     // 🔥 ALWAYS apply base stability options
+	        options.addArguments("--no-sandbox");
+	        options.addArguments("--disable-dev-shm-usage");
+	        options.addArguments("--window-size=1920,1080");
 
-	            // 🔥 CI MODE
+	        // 🔥 Apply headless only if flag is true
+	        if ("true".equalsIgnoreCase(headless)) {
 	            options.addArguments("--headless=new");
-	            options.addArguments("--no-sandbox");
-	            options.addArguments("--disable-dev-shm-usage");
-	            options.addArguments("--window-size=1920,1080");
-
-	            System.out.println("Running in HEADLESS mode (CI)");
+	            System.out.println("Running in HEADLESS mode");
 	        } else {
-	            // 💻 LOCAL MODE
-	            System.out.println("Running in NORMAL mode (LOCAL)");
+	            System.out.println("Running in NORMAL mode");
 	        }
 
 	        driver = new ChromeDriver(options);
 	    }
-	
 	
         else if (browser.equalsIgnoreCase("edge")) {
         	   System.setProperty("webdriver.edge.driver", "F:\\Automation 2026\\msedgedriver.exe");   //  actual path
