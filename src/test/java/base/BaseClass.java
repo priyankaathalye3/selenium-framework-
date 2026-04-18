@@ -31,8 +31,9 @@ public class BaseClass {
         
         */
 	
-	@beforeMethod
+
 	@Parameters("browser")
+	@beforeMethod
 	public void setup(String browser) {
 
 	    config = new ConfigReader();
