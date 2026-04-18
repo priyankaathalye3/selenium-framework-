@@ -16,6 +16,7 @@ public class BaseClass {
 	public WebDriver driver;
 	ConfigReader config;
 	
+	/*
 	@Parameters("browser")    // to support parallel execution in different browsers
     @BeforeMethod
     public void setup(String browser) {
@@ -27,6 +28,42 @@ public class BaseClass {
         if (browser.equalsIgnoreCase("chrome")) {
             driver = new ChromeDriver();
         } 
+        
+        */
+	
+	@beforeMethod
+	@Parameters("browser")
+	public void setup(String browser) {
+
+	    config = new ConfigReader();
+
+	    if (browser.equalsIgnoreCase("chrome")) {
+
+	        WebDriverManager.chromedriver().setup();
+
+	        ChromeOptions options = new ChromeOptions();
+
+	        // 👇 Check if headless flag is passed
+	        String headless = System.getProperty("headless");
+
+	        if (headless != null && headless.equalsIgnoreCase("true")) {
+
+	            // 🔥 CI MODE
+	            options.addArguments("--headless=new");
+	            options.addArguments("--no-sandbox");
+	            options.addArguments("--disable-dev-shm-usage");
+	            options.addArguments("--window-size=1920,1080");
+
+	            System.out.println("Running in HEADLESS mode (CI)");
+	        } else {
+	            // 💻 LOCAL MODE
+	            System.out.println("Running in NORMAL mode (LOCAL)");
+	        }
+
+	        driver = new ChromeDriver(options);
+	    }
+	
+	
         else if (browser.equalsIgnoreCase("edge")) {
         	   System.setProperty("webdriver.edge.driver", "F:\\Automation 2026\\msedgedriver.exe");   //  actual path
         	
