@@ -6,8 +6,9 @@
       <class name="tests.AmazonTest1">
         <methods>
           <include name="tearDown"/>
+          <include name="searchBooks"/>
           <include name="setup"/>
-          <include name="searchMobile" invocation-numbers="1 2"/>
+          <include name="searchMobile"/>
         </methods>
       </class> <!-- tests.AmazonTest1 -->
     </classes>
