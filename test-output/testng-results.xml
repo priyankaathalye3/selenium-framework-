@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
+<testng-results ignored="0" total="8" passed="4" failed="0" skipped="4">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-18T21:26:28 IST" name="Suite" finished-at="2026-04-18T21:27:25 IST" duration-ms="57141">
+  <suite started-at="2026-06-25T21:32:39 IST" name="Suite" finished-at="2026-06-25T21:33:30 IST" duration-ms="51397">
     <groups>
     </groups>
-    <test started-at="2026-04-18T21:26:28 IST" name="EdgeTest" finished-at="2026-04-18T21:27:24 IST" duration-ms="55491">
+    <test started-at="2026-06-25T21:32:39 IST" name="ChromeTest" finished-at="2026-06-25T21:33:29 IST" duration-ms="50594">
       <class name="tests.AmazonTest1">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.AmazonTest1@4e3958e7]" started-at="2026-04-18T21:26:28 IST" name="setup" finished-at="2026-04-18T21:26:32 IST" duration-ms="4106" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.AmazonTest1@5bda8e08]" started-at="2026-06-25T21:32:39 IST" name="setup" finished-at="2026-06-25T21:32:45 IST" duration-ms="6456" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[edge]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchMobile(java.lang.String)[pri:0, instance:tests.AmazonTest1@4e3958e7]" started-at="2026-04-18T21:26:32 IST" name="searchMobile" data-provider="searchData" finished-at="2026-04-18T21:26:43 IST" duration-ms="10476" status="PASS">
+        <test-method signature="searchMobile(java.lang.String)[pri:0, instance:tests.AmazonTest1@5bda8e08]" started-at="2026-06-25T21:32:45 IST" name="searchMobile" data-provider="searchData" finished-at="2026-06-25T21:32:55 IST" duration-ms="9057" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,203 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchMobile -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.AmazonTest1@4e3958e7]" started-at="2026-04-18T21:26:43 IST" name="tearDown" finished-at="2026-04-18T21:26:44 IST" duration-ms="733" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=searchMobile status=SUCCESS method=AmazonTest1.searchMobile(java.lang.String)[pri:0, instance:tests.AmazonTest1@4e3958e7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.AmazonTest1@4e3958e7]" started-at="2026-04-18T21:26:44 IST" name="setup" finished-at="2026-04-18T21:26:47 IST" duration-ms="3105" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="searchMobile(java.lang.String)[pri:0, instance:tests.AmazonTest1@4e3958e7]" started-at="2026-04-18T21:26:47 IST" name="searchMobile" data-provider="searchData" finished-at="2026-04-18T21:26:56 IST" duration-ms="8859" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[laptop]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchMobile -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.AmazonTest1@4e3958e7]" started-at="2026-04-18T21:26:56 IST" name="tearDown" finished-at="2026-04-18T21:26:56 IST" duration-ms="485" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=searchMobile status=SUCCESS method=AmazonTest1.searchMobile(java.lang.String)[pri:0, instance:tests.AmazonTest1@4e3958e7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.AmazonTest1@4e3958e7]" started-at="2026-04-18T21:26:56 IST" name="setup" finished-at="2026-04-18T21:26:59 IST" duration-ms="3054" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="searchMobile(java.lang.String)[pri:0, instance:tests.AmazonTest1@4e3958e7]" started-at="2026-04-18T21:26:59 IST" name="searchMobile" data-provider="searchData" finished-at="2026-04-18T21:27:11 IST" duration-ms="11529" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[headphones]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchMobile -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.AmazonTest1@4e3958e7]" started-at="2026-04-18T21:27:11 IST" name="tearDown" finished-at="2026-04-18T21:27:11 IST" duration-ms="337" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=searchMobile status=SUCCESS method=AmazonTest1.searchMobile(java.lang.String)[pri:0, instance:tests.AmazonTest1@4e3958e7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.AmazonTest1@4e3958e7]" started-at="2026-04-18T21:27:11 IST" name="setup" finished-at="2026-04-18T21:27:14 IST" duration-ms="2531" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="searchBooks()[pri:2, instance:tests.AmazonTest1@4e3958e7]" started-at="2026-04-18T21:27:14 IST" name="searchBooks" finished-at="2026-04-18T21:27:23 IST" duration-ms="9612" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchBooks -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.AmazonTest1@4e3958e7]" started-at="2026-04-18T21:27:23 IST" name="tearDown" finished-at="2026-04-18T21:27:24 IST" duration-ms="572" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=searchBooks status=SUCCESS method=AmazonTest1.searchBooks()[pri:2, instance:tests.AmazonTest1@4e3958e7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.AmazonTest1 -->
-    </test> <!-- EdgeTest -->
-    <test started-at="2026-04-18T21:26:28 IST" name="ChromeTest" finished-at="2026-04-18T21:27:25 IST" duration-ms="57141">
-      <class name="tests.AmazonTest1">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.AmazonTest1@5bda8e08]" started-at="2026-04-18T21:26:28 IST" name="setup" finished-at="2026-04-18T21:26:32 IST" duration-ms="4070" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="searchMobile(java.lang.String)[pri:0, instance:tests.AmazonTest1@5bda8e08]" started-at="2026-04-18T21:26:32 IST" name="searchMobile" data-provider="searchData" finished-at="2026-04-18T21:26:47 IST" duration-ms="14904" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mobile]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.testng.Assert.assertTrue(Assert.java:67)
-at tests.AmazonTest1.searchMobile(AmazonTest1.java:38)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchMobile -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.AmazonTest1@5bda8e08]" started-at="2026-04-18T21:26:47 IST" name="tearDown" finished-at="2026-04-18T21:26:48 IST" duration-ms="1186" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=searchMobile status=FAILURE method=AmazonTest1.searchMobile(java.lang.String)[pri:0, instance:tests.AmazonTest1@5bda8e08] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.AmazonTest1@5bda8e08]" started-at="2026-04-18T21:26:48 IST" name="setup" finished-at="2026-04-18T21:26:51 IST" duration-ms="2839" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="searchMobile(java.lang.String)[pri:0, instance:tests.AmazonTest1@5bda8e08]" started-at="2026-04-18T21:26:51 IST" name="searchMobile" data-provider="searchData" finished-at="2026-04-18T21:27:00 IST" duration-ms="9102" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[laptop]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchMobile -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.AmazonTest1@5bda8e08]" started-at="2026-04-18T21:27:00 IST" name="tearDown" finished-at="2026-04-18T21:27:01 IST" duration-ms="432" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.AmazonTest1@5bda8e08]" started-at="2026-06-25T21:32:55 IST" name="tearDown" finished-at="2026-06-25T21:32:55 IST" duration-ms="504" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -236,7 +40,7 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.AmazonTest1@5bda8e08]" started-at="2026-04-18T21:27:01 IST" name="setup" finished-at="2026-04-18T21:27:03 IST" duration-ms="2464" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.AmazonTest1@5bda8e08]" started-at="2026-06-25T21:32:55 IST" name="setup" finished-at="2026-06-25T21:32:58 IST" duration-ms="2994" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -247,18 +51,18 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchMobile(java.lang.String)[pri:0, instance:tests.AmazonTest1@5bda8e08]" started-at="2026-04-18T21:27:03 IST" name="searchMobile" data-provider="searchData" finished-at="2026-04-18T21:27:13 IST" duration-ms="9542" status="PASS">
+        <test-method signature="searchMobile(java.lang.String)[pri:0, instance:tests.AmazonTest1@5bda8e08]" started-at="2026-06-25T21:32:58 IST" name="searchMobile" data-provider="searchData" finished-at="2026-06-25T21:33:06 IST" duration-ms="7518" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[headphones]]>
+                <![CDATA[laptop]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchMobile -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.AmazonTest1@5bda8e08]" started-at="2026-04-18T21:27:13 IST" name="tearDown" finished-at="2026-04-18T21:27:13 IST" duration-ms="421" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.AmazonTest1@5bda8e08]" started-at="2026-06-25T21:33:06 IST" name="tearDown" finished-at="2026-06-25T21:33:06 IST" duration-ms="292" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -269,7 +73,7 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.AmazonTest1@5bda8e08]" started-at="2026-04-18T21:27:13 IST" name="setup" finished-at="2026-04-18T21:27:16 IST" duration-ms="2666" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.AmazonTest1@5bda8e08]" started-at="2026-06-25T21:33:06 IST" name="setup" finished-at="2026-06-25T21:33:09 IST" duration-ms="3084" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -280,11 +84,44 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchBooks()[pri:2, instance:tests.AmazonTest1@5bda8e08]" started-at="2026-04-18T21:27:16 IST" name="searchBooks" finished-at="2026-04-18T21:27:25 IST" duration-ms="9133" status="PASS">
+        <test-method signature="searchMobile(java.lang.String)[pri:0, instance:tests.AmazonTest1@5bda8e08]" started-at="2026-06-25T21:33:09 IST" name="searchMobile" data-provider="searchData" finished-at="2026-06-25T21:33:17 IST" duration-ms="8490" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[headphones]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchMobile -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.AmazonTest1@5bda8e08]" started-at="2026-06-25T21:33:17 IST" name="tearDown" finished-at="2026-06-25T21:33:18 IST" duration-ms="332" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchMobile status=SUCCESS method=AmazonTest1.searchMobile(java.lang.String)[pri:0, instance:tests.AmazonTest1@5bda8e08] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.AmazonTest1@5bda8e08]" started-at="2026-06-25T21:33:18 IST" name="setup" finished-at="2026-06-25T21:33:24 IST" duration-ms="5978" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="searchBooks()[pri:2, instance:tests.AmazonTest1@5bda8e08]" started-at="2026-06-25T21:33:24 IST" name="searchBooks" finished-at="2026-06-25T21:33:29 IST" duration-ms="5387" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchBooks -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.AmazonTest1@5bda8e08]" started-at="2026-04-18T21:27:25 IST" name="tearDown" finished-at="2026-04-18T21:27:25 IST" duration-ms="288" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.AmazonTest1@5bda8e08]" started-at="2026-06-25T21:33:29 IST" name="tearDown" finished-at="2026-06-25T21:33:29 IST" duration-ms="324" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -297,5 +134,480 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
         </test-method> <!-- tearDown -->
       </class> <!-- tests.AmazonTest1 -->
     </test> <!-- ChromeTest -->
+    <test started-at="2026-06-25T21:33:30 IST" name="EdgeTest" finished-at="2026-06-25T21:33:30 IST" duration-ms="691">
+      <class name="tests.AmazonTest1">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.AmazonTest1@4e3958e7]" started-at="2026-06-25T21:33:30 IST" name="setup" finished-at="2026-06-25T21:33:30 IST" duration-ms="551" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
+            <message>
+              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1421)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
+at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+at base.BaseClass.setup(BaseClass.java:85)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
+at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
+at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
+... 35 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
+at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
+... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="searchMobile(java.lang.String)[pri:0, instance:tests.AmazonTest1@4e3958e7]" started-at="2026-06-25T21:33:30 IST" name="searchMobile" data-provider="searchData" finished-at="2026-06-25T21:33:30 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mobile]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
+            <message>
+              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1421)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
+at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+at base.BaseClass.setup(BaseClass.java:85)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
+at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
+at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
+... 35 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
+at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
+... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchMobile -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.AmazonTest1@4e3958e7]" started-at="2026-06-25T21:33:30 IST" name="tearDown" finished-at="2026-06-25T21:33:30 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.AmazonTest1@4e3958e7]" started-at="2026-06-25T21:33:30 IST" name="setup" finished-at="2026-06-25T21:33:30 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="searchMobile(java.lang.String)[pri:0, instance:tests.AmazonTest1@4e3958e7]" started-at="2026-06-25T21:33:30 IST" name="searchMobile" data-provider="searchData" finished-at="2026-06-25T21:33:30 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[laptop]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
+            <message>
+              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1421)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
+at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+at base.BaseClass.setup(BaseClass.java:85)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
+at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
+at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
+... 35 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
+at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
+... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchMobile -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.AmazonTest1@4e3958e7]" started-at="2026-06-25T21:33:30 IST" name="tearDown" finished-at="2026-06-25T21:33:30 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.AmazonTest1@4e3958e7]" started-at="2026-06-25T21:33:30 IST" name="setup" finished-at="2026-06-25T21:33:30 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="searchMobile(java.lang.String)[pri:0, instance:tests.AmazonTest1@4e3958e7]" started-at="2026-06-25T21:33:30 IST" name="searchMobile" data-provider="searchData" finished-at="2026-06-25T21:33:30 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[headphones]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
+            <message>
+              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1421)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
+at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+at base.BaseClass.setup(BaseClass.java:85)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
+at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
+at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
+... 35 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
+at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
+... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchMobile -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.AmazonTest1@4e3958e7]" started-at="2026-06-25T21:33:30 IST" name="tearDown" finished-at="2026-06-25T21:33:30 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.AmazonTest1@4e3958e7]" started-at="2026-06-25T21:33:30 IST" name="setup" finished-at="2026-06-25T21:33:30 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="searchBooks()[pri:2, instance:tests.AmazonTest1@4e3958e7]" started-at="2026-06-25T21:33:30 IST" name="searchBooks" finished-at="2026-06-25T21:33:30 IST" duration-ms="0" status="SKIP">
+          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
+            <message>
+              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1421)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
+at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+at base.BaseClass.setup(BaseClass.java:85)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
+at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
+at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
+... 35 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
+at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
+... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchBooks -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.AmazonTest1@4e3958e7]" started-at="2026-06-25T21:33:30 IST" name="tearDown" finished-at="2026-06-25T21:33:30 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.AmazonTest1 -->
+    </test> <!-- EdgeTest -->
   </suite> <!-- Suite -->
 </testng-results>

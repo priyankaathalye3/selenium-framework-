@@ -6,8 +6,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 import java.io.File;
 import org.openqa.selenium.OutputType;
@@ -51,19 +51,18 @@ public class BaseClass {
 	    if (browser.equalsIgnoreCase("chrome")) {
 
 	        WebDriverManager.chromedriver().setup();
-
+	        
 	        ChromeOptions options = new ChromeOptions();
 
-	        // 👇 Check if headless flag is passed
-	        String headless = System.getProperty("headless");
-
-	     // 🔥 ALWAYS apply base stability options
-	        options.addArguments("--headless=new");
 	        options.addArguments("--no-sandbox");
 	        options.addArguments("--disable-dev-shm-usage");
 	        options.addArguments("--window-size=1920,1080");
+	        
+	        // 👇 Check if headless flag is passed
 
-	        // 🔥 Apply headless only if flag is true
+	        String headless = System.getProperty("headless");
+
+	     // 🔥 ALWAYS apply base stability options
 	        if ("true".equalsIgnoreCase(headless)) {
 	            options.addArguments("--headless=new");
 	            System.out.println("Running in HEADLESS mode");
@@ -72,14 +71,23 @@ public class BaseClass {
 	        }
 
 	        driver = new ChromeDriver(options);
-	    	System.out.println("Launching Chrome with options: " + options);
+	        System.out.println("Launching Chrome with options: " + options);
 	    }
 	
-        else if (browser.equalsIgnoreCase("edge")) {
+        /* else if (browser.equalsIgnoreCase("edge")) {
         	   System.setProperty("webdriver.edge.driver", "F:\\Automation 2026\\msedgedriver.exe");   //  actual path
         	
             driver = new EdgeDriver();
-        }
+        }  */
+	    
+	    else if (browser.equalsIgnoreCase("edge")) {
+
+	        WebDriverManager.edgedriver().setup();
+
+	        driver = new EdgeDriver();
+	    }
+
+	  
         
         driver.get(config.getProperty("url"));
         
