@@ -30,7 +30,7 @@ public class AmazonTest1 extends BaseClass{
         amazon.enterSearchText(product);
         amazon.clickSearch();
 
-        System.out.println("Searching for:" + product);
+        System.out.println("Searching for products:" + product);
         
         String title= amazon.getTitle();
         System.out.print(title);
