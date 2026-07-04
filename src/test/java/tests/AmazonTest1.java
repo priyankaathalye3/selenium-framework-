@@ -30,13 +30,18 @@ public class AmazonTest1 extends BaseClass{
         amazon.enterSearchText(product);
         amazon.clickSearch();
 
-        System.out.println("Searching for:" + product);
+        System.out.println("Searching for products:" + product);
         
         String title= amazon.getTitle();
         System.out.print(title);
         
         Assert.assertTrue(amazon.getTitle().contains(product));
-        //Assert.assertTrue(driver.getTitle().contains("Amazon"));
+        
+        // Temporary debugging
+        System.out.println("Page Title = " + driver.getTitle());
+        System.out.println("Current URL = " + driver.getCurrentUrl());
+
+     
     }
 
     @Test (priority =2 )
@@ -50,6 +55,11 @@ public class AmazonTest1 extends BaseClass{
         String title= amazon.getTitle();
         System.out.print(title);
         Assert.assertTrue(amazon.getTitle().contains("Java"));
+        
+     // Temporary debugging
+        System.out.println("Page Title = " + driver.getTitle());
+        System.out.println("Current URL = " + driver.getCurrentUrl());
+
         //Assert.assertTrue(driver.getTitle().contains("Amazon"));
     }
 

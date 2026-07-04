@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/4</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jun 25 21:33:30 IST 2026</td>
+<td>Started on:</td><td>Fri Jul 03 16:56:48 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (691 ms)</td>
+<tr><td>Total time:</td><td>3 seconds (3913 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -84,15 +84,19 @@ function toggleAllBoxes() {
 	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
 	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
 	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-	at base.BaseClass.setup(BaseClass.java:85)
+	at base.BaseClass.setup(BaseClass.java:108)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
 	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
 	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
 	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
 	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
-	... 35 more
+	... 29 more
 Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
@@ -118,16 +122,16 @@ Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
 	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
 	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
-	... 39 more
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace10304615", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace10304615'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	... 33 more
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1642130684", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1642130684'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1421)
 	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
 	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
 	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
 	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
 	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-	at base.BaseClass.setup(BaseClass.java:85)
+	at base.BaseClass.setup(BaseClass.java:108)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -146,25 +150,19 @@ Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
 	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
 	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
 	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
 	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
-	... 35 more
+	... 29 more
 Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
@@ -190,9 +188,9 @@ Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
 	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
 	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
-	... 39 more
+	... 33 more
 </pre></div></td>
-<td>0</td>
+<td>3</td>
 <td>tests.AmazonTest1@4e3958e7</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -214,22 +212,22 @@ Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 <td>0</td>
 <td>tests.AmazonTest1@4e3958e7</td></tr>
 <tr>
-<td title='tests.AmazonTest1.tearDown()'><b>tearDown</b><br>Test class: tests.AmazonTest1</td>
-<td></td>
-<td>0</td>
-<td>tests.AmazonTest1@4e3958e7</td></tr>
-<tr>
-<td title='tests.AmazonTest1.tearDown()'><b>tearDown</b><br>Test class: tests.AmazonTest1</td>
-<td></td>
-<td>0</td>
-<td>tests.AmazonTest1@4e3958e7</td></tr>
-<tr>
-<td title='tests.AmazonTest1.tearDown()'><b>tearDown</b><br>Test class: tests.AmazonTest1</td>
-<td></td>
-<td>0</td>
-<td>tests.AmazonTest1@4e3958e7</td></tr>
-<tr>
 <td title='tests.AmazonTest1.setup()'><b>setup</b><br>Test class: tests.AmazonTest1</td>
+<td></td>
+<td>0</td>
+<td>tests.AmazonTest1@4e3958e7</td></tr>
+<tr>
+<td title='tests.AmazonTest1.tearDown()'><b>tearDown</b><br>Test class: tests.AmazonTest1</td>
+<td></td>
+<td>0</td>
+<td>tests.AmazonTest1@4e3958e7</td></tr>
+<tr>
+<td title='tests.AmazonTest1.tearDown()'><b>tearDown</b><br>Test class: tests.AmazonTest1</td>
+<td></td>
+<td>0</td>
+<td>tests.AmazonTest1@4e3958e7</td></tr>
+<tr>
+<td title='tests.AmazonTest1.tearDown()'><b>tearDown</b><br>Test class: tests.AmazonTest1</td>
 <td></td>
 <td>0</td>
 <td>tests.AmazonTest1@4e3958e7</td></tr>
@@ -248,125 +246,6 @@ Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.AmazonTest1.searchMobile()'><b>searchMobile</b><br>Test class: tests.AmazonTest1<br>Parameters: laptop</td>
-<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1421)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
-	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
-	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-	at base.BaseClass.setup(BaseClass.java:85)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
-	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
-	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
-	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
-	... 35 more
-Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
-	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
-	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
-	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
-	... 39 more
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2071364564", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2071364564'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1421)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
-	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
-	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
-	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-	at base.BaseClass.setup(BaseClass.java:85)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
-	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
-	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
-	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
-	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
-	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
-	... 35 more
-Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
-	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
-	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
-	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
-	... 39 more
-</pre></div></td>
-<td>0</td>
-<td>tests.AmazonTest1@4e3958e7</td></tr>
-<tr>
 <td title='tests.AmazonTest1.searchMobile()'><b>searchMobile</b><br>Test class: tests.AmazonTest1<br>Parameters: mobile</td>
 <td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1421)
@@ -375,15 +254,19 @@ Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
 	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
 	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-	at base.BaseClass.setup(BaseClass.java:85)
+	at base.BaseClass.setup(BaseClass.java:108)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
 	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
 	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
 	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
 	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
-	... 35 more
+	... 29 more
 Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
@@ -409,16 +292,16 @@ Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
 	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
 	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
-	... 39 more
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1745512157", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1745512157'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	... 33 more
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace339841619", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace339841619'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1421)
 	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
 	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
 	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
 	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
 	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-	at base.BaseClass.setup(BaseClass.java:85)
+	at base.BaseClass.setup(BaseClass.java:108)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -437,25 +320,19 @@ Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
 	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
 	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
 	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
 	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
-	... 35 more
+	... 29 more
 Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
@@ -481,12 +358,12 @@ Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
 	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
 	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
-	... 39 more
+	... 33 more
 </pre></div></td>
 <td>0</td>
 <td>tests.AmazonTest1@4e3958e7</td></tr>
 <tr>
-<td title='tests.AmazonTest1.searchMobile()'><b>searchMobile</b><br>Test class: tests.AmazonTest1<br>Parameters: headphones</td>
+<td title='tests.AmazonTest1.searchMobile()'><b>searchMobile</b><br>Test class: tests.AmazonTest1<br>Parameters: laptop</td>
 <td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1421)
 	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
@@ -494,15 +371,19 @@ Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
 	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
 	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-	at base.BaseClass.setup(BaseClass.java:85)
+	at base.BaseClass.setup(BaseClass.java:108)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
 	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
 	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
 	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
 	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
-	... 35 more
+	... 29 more
 Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
@@ -528,16 +409,16 @@ Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
 	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
 	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
-	... 39 more
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace972720850", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace972720850'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	... 33 more
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace452199472", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace452199472'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1421)
 	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
 	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
 	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
 	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
 	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-	at base.BaseClass.setup(BaseClass.java:85)
+	at base.BaseClass.setup(BaseClass.java:108)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -556,25 +437,19 @@ Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
 	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
 	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
 	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
 	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
-	... 35 more
+	... 29 more
 Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
@@ -600,7 +475,7 @@ Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
 	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
 	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
-	... 39 more
+	... 33 more
 </pre></div></td>
 <td>0</td>
 <td>tests.AmazonTest1@4e3958e7</td></tr>
@@ -613,15 +488,19 @@ Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
 	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
 	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-	at base.BaseClass.setup(BaseClass.java:85)
+	at base.BaseClass.setup(BaseClass.java:108)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
 	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
 	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
 	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
 	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
-	... 35 more
+	... 29 more
 Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
@@ -647,16 +526,16 @@ Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
 	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
 	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
-	... 39 more
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace217479224", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace217479224'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	... 33 more
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1487332850", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1487332850'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1421)
 	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
 	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
 	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
 	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
 	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-	at base.BaseClass.setup(BaseClass.java:85)
+	at base.BaseClass.setup(BaseClass.java:108)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -675,25 +554,19 @@ Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
 	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
 	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
 	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
 	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
-	... 35 more
+	... 29 more
 Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
 	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
@@ -719,7 +592,124 @@ Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
 	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
 	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
-	... 39 more
+	... 33 more
+</pre></div></td>
+<td>0</td>
+<td>tests.AmazonTest1@4e3958e7</td></tr>
+<tr>
+<td title='tests.AmazonTest1.searchMobile()'><b>searchMobile</b><br>Test class: tests.AmazonTest1<br>Parameters: headphones</td>
+<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1421)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+	at base.BaseClass.setup(BaseClass.java:108)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
+	... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
+	... 33 more
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1792602909", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1792602909'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1421)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+	at base.BaseClass.setup(BaseClass.java:108)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
+	... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
+	... 33 more
 </pre></div></td>
 <td>0</td>
 <td>tests.AmazonTest1@4e3958e7</td></tr>

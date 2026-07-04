@@ -37,22 +37,28 @@ public class BaseClass {
 	
 	@BeforeMethod
 	@Parameters("browser")
+	
 
-	public void setup(String browser) {
+	public void setup(@Optional("chrome") String browser) {
+
+	//public void setup(String browser) {
 
 	    config = new ConfigReader();
 	    
+	    boolean headless =
+                Boolean.parseBoolean(System.getProperty("headless", "false"));
+	    
 	    // ✅ Fallback (important for CI)
-	    if (browser == null || browser.isEmpty()) {
-	        browser = "chrome";
-	        System.out.println("No browser provided, defaulting to CHROME");
-	    }
+	    //if (browser == null || browser.isEmpty()) {
+	    //    browser = "chrome";
+	     //   System.out.println("No browser provided, defaulting to CHROME");
+	    //}
 
 	    if (browser.equalsIgnoreCase("chrome")) {
 
 	        WebDriverManager.chromedriver().setup();
 	        
-	        ChromeOptions options = new ChromeOptions();
+	        /*ChromeOptions options = new ChromeOptions();
 
 	        options.addArguments("--no-sandbox");
 	        options.addArguments("--disable-dev-shm-usage");
@@ -69,7 +75,24 @@ public class BaseClass {
 	        } else {
 	            System.out.println("Running in NORMAL mode");
 	        }
+	        
+	        */
 
+	        ChromeOptions options = new ChromeOptions();
+
+	    
+
+	        if (headless) {
+	            options.addArguments("--headless=new");
+	        }
+
+	        options.addArguments("--no-sandbox");
+	        options.addArguments("--disable-dev-shm-usage");
+	        options.addArguments("--disable-gpu");
+	        options.addArguments("--window-size=1920,1080");
+	        options.addArguments("--remote-allow-origins=*");
+	        
+	        
 	        driver = new ChromeDriver(options);
 	        System.out.println("Launching Chrome with options: " + options);
 	    }
@@ -85,6 +108,7 @@ public class BaseClass {
 	        WebDriverManager.edgedriver().setup();
 
 	        driver = new EdgeDriver();
+	        //driver.manage().window().maximize();
 	    }
 
 	  
@@ -92,7 +116,9 @@ public class BaseClass {
         driver.get(config.getProperty("url"));
         
 		// driver.get("https://www.amazon.com/");  old
-		driver.manage().window().maximize();
+        if (!headless) {
+            driver.manage().window().maximize();
+        }
 		
 
 	}
